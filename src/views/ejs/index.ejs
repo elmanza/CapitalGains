@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <title>Shares Process</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>Code Challenge: Capital Gains</h1>
+      <p>
+        Este programa tiene como fin recibir uno o varios arrays de objetos, lo cuales estan compuestos por 3 llaves que son <b>operation</b>, <b>unit-cost</b> y <b>quantity</b>.
+        Puedes seleccionar los casos que se evaluan en el documento del Challenge, en el select de abajo. Este select cambiará el payload del editor de esta pagina. Importante recalcar que para enviar el request debes de dar click en el buton de process que se encuentra debajo del editor de texto. La respuesta del servidor se mostrará en el recuadro de respuesta, el cual esta debajo del boton.
+      </p>
+    </div>
+    <div class="containerTextArea">
+      <select name="cases" id="cases" onchange="changeCase()">
+        <option value="0">Case 1</option>
+        <option value="1">Case 2</option>
+        <option value="2">Case #1 + Case #2</option>
+        <option value="3">Case 3</option>
+        <option value="4">Case 4</option>
+        <option value="5">Case 5</option>
+        <option value="6">Case 6</option>
+        <option value="7">Case 7</option>
+        <option value="8">Case 8</option>
+        <option value="9">Case 9</option>
+      </select>
+      <div class="textareaHeader"></div>
+      <textarea name="editor" id="editor">
+
+      </textarea>
+    </div>
+    <button id="process">Process</button>
+    <div class="containerResult">
+      <span class="labelresult">Respuesta de la API</span>
+      <div id="result"></div>
+    </div>
+  </div>
+</body>
+</html>

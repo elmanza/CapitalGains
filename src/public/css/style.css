@@ -1,0 +1,96 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #f7f7f7;
+  font-family: 'Roboto';
+}
+h1{ 
+  font-weight: 900;
+  text-align: center;
+  font-size: 30pt;
+  margin-bottom: 35px;
+}
+p{
+  text-align: center;
+  font-size: 10.8pt;
+  line-height: 1.6em;
+  padding: 0px 20px 0px 20px;
+  color: rgba(88,89,90,1);
+  width: 100%;
+  max-width: 815px;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0px;
+}
+#editor{
+  width: 100%;
+  max-width: 847px;
+  height: 300px;
+  margin-bottom: 20px;
+  position: relative;
+  resize: none;
+  outline: none;
+  border: 0px;
+}
+#editor:focus, #editor:focus-visible{border: none;}
+button{
+  cursor: pointer;
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+  outline: none;
+}
+.containerResult{
+  padding: 30px 0px;
+}
+.labelresult{
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+#result{
+  font-size: 13pt;
+  border: 1px black dashed;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Source Code Pro', monospace;
+  width: 100%;
+  max-width: 680px;
+  min-width: 180px;
+}
+select{
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  top: 0px;
+  width: 150px;
+  height: 36px;
+  border: none;
+}
+.containerTextArea{
+  width: 100%;
+  max-width: 850px;
+  position: relative;  
+  margin-top: 20px;
+}
+.textareaHeader{
+  background-color: #333;
+  width: 100%;
+  height: 36px;
+}
